@@ -1,0 +1,138 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Mulish:wght@200&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+.hey{
+    background-color: blanchedalmond;
+}
+
+*{
+    /* font-family: 'Mulish', sans-serif; */
+    /* font-family: 'Mukta', sans-serif; */
+    /* transition: all 0.25s ease-out; */
+}
+.vh100{
+  height: 100vh;
+}
+
+.required-field::before {
+  content: "*";
+  color: red;
+
+}
+.error-effect{
+  animation: shake 0.6s ease-out !important;
+}
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  20%, 60% {transform: translateX(-6px);}
+  40%, 80% {transform: translateX(6px);}
+}
+
+
+.bottomReminder_info {
+  font-size: 12px;
+  line-height: 18px;
+  background-color: rgba(189, 207, 255, 0.315);
+  border-left: 3px solid #2190f3;
+  bottom: 22px;
+  color: #2190f3;
+  right: 22px;
+  left: 22px;
+
+}
+
+.status-icon{
+  max-width: 28px !important;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color:rgb(235, 246, 255);
+  background-image:
+  radial-gradient(at 100% 6%, rgb(248, 225, 255) 0px, transparent 50%),
+  radial-gradient(at 0% 100%, hsla(197,100%,83%,1) 0px, transparent 50%);
+
+}
+
+
+
+:root {
+    --bg: #171c24;
+    --darkBg:#10151b;
+    
+    --secondary-color: #ff9800;
+    --text-color: #333;
+    --text-green: #2d9d84;
+    --text-gray: #6c757d86;
+
+
+    --font-mulish: 'Mulish', sans-serif;
+    --font-teko: 'Teko', sans-serif;
+}
+  
+*{
+    transition: all 0.25s ease-out !important;
+    /* color: var(--text-green); */
+}
+
+.bgBlueColor{
+    background-color: var(--bg);
+}
+
+.outline-stroke{
+    font-family: Impact;
+    color: var(--text-gray);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    text-stroke-width: 1px;
+}
+
+.mulish{
+    font-family: var(--font-mulish);
+}
+
+.mukta{
+    font-family: 'Mukta', sans-serif;
+}
+.teko{
+  font-family: var(--font-teko);
+}
+
+.greenText{
+    color: var(--text-green);
+}
+
+.grayText{
+    color: var(--text-gray);
+}
+
+.grayBorder{
+    border: 2px solid #6c757d86;
+}
+
+.darkBg{
+    background-color: var(--darkBg);
+}
+
+.headerSpace{
+    height: 80vh;
+}
+
+.navSpace{
+    height: 10vh;
+}
+.mainLogo{
+    height: 28px !important;
+    width: 28px !important;
+}
+/* 
+body{
+  background-color: var(--bg);
+} */
+.skillsLogo{
+    /* height: 34px !important;
+    width: 34px !important; */
+}
