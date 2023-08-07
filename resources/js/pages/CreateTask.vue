@@ -32,4 +32,3 @@ import DashboardHeader from "../components/DashboardHeader.vue";
 }
 </style>
 
-// , destroyPost

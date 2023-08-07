@@ -84,7 +84,6 @@ import gsap from "gsap";
 const title = ref(true);
 
 const token = ref(localStorage.getItem("token"));
-const name = ref(localStorage.getItem("firstName"));
 
 const hasToken = computed(() => {
     return token.value !== null;

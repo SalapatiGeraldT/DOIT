@@ -1,5 +1,5 @@
 <template>
-    <div class="px-6 py-8 my-4 rounded bg-white  md:w-4/6 w-full">
+    <div class="px-6 py-8 my-4 rounded bg-white md:w-4/6 w-full">
         <div class=" ">
             <div class="mb-3 text-xl antialiased font-bold text-center mukta">
                 Add Task
@@ -33,7 +33,7 @@
                         id="description"
                         name="description"
                         rows="4"
-                        class="block p-2.5 w-full text-sm outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
+                        class="block my-1 p-2 w-full text-sm outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
                         placeholder="Write your description here..."
                     ></textarea>
                     <div class="error-effect" v-if="errors.description">
@@ -46,7 +46,7 @@
                 <div class="my-5">
                     <CustomLabel for="status"> Status </CustomLabel>
                     <select
-                        class="w-full  my-1 p-2 outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
+                        class="w-full my-1 p-2 outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
                         name="status"
                         title="status"
                         v-model="form.status"
@@ -65,9 +65,12 @@
                 </div>
                 <div class="my-5">
                     <CustomLabel for="status"> Due Date </CustomLabel>
-                    <input type="datetime-local" id="due_date" name="due_date" v-model="form.due_date" 
-                        class="w-full  my-1 p-2 outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
-                                 
+                    <input
+                        type="datetime-local"
+                        id="due_date"
+                        name="due_date"
+                        v-model="form.due_date"
+                        class="w-full my-1 p-2 outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
                     />
                     <div class="error-effect" v-if="errors.due_date">
                         <span class="text-sm text-red-400">{{

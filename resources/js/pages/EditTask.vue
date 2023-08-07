@@ -17,7 +17,7 @@
                         <div class="my-5">
                             <CustomLabel for="title"> Title </CustomLabel>
                             <input
-                                class="block p-2.5 w-full text-sm outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
+                                class="block my-1 p-2 w-full text-sm outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
                                 name="title"
                                 placeholder="Enter your title"
                                 type="text"
@@ -40,7 +40,7 @@
                                 id="description"
                                 name="description"
                                 rows="4"
-                                class="block p-2.5 w-full text-sm outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
+                                class="block my-1 p-2 w-full text-sm outline-none rounded hover:bg-sky-200 focus:ring-2 border-sky-800 border focus:ring-sky-900"
                                 placeholder="Write your description here..."
                             ></textarea>
                             <div class="error-effect" v-if="errors.description">

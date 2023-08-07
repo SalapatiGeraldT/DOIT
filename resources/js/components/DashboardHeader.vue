@@ -27,10 +27,7 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import useTasks from "../repositories/task";
-
-const { getTasks } = useTasks();
+import { RouterLink } from "vue-router";
 </script>
 
 <style scoped></style>

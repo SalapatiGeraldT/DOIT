@@ -26,7 +26,6 @@ const logout = async () => {
                     class="py-8 mx-[min(5vw,7rem)] flex justify-between mulish"
                 >
                     <RouterLink
-                   
                         class="hover:text-blue-500"
                         :to="{ name: 'Home' }"
                         >Doit
@@ -35,7 +34,9 @@ const logout = async () => {
                         <ul class="flex space-x-3">
                             <li v-if="!hasToken">
                                 <RouterLink
-                                :class="{ 'text-blue-500': $route.name == 'Home' }"
+                                    :class="{
+                                        'text-blue-500': $route.name == 'Home',
+                                    }"
                                     class="hover:text-blue-500"
                                     :to="{ name: 'Home' }"
                                     >Home
@@ -43,7 +44,9 @@ const logout = async () => {
                             </li>
                             <li v-if="!hasToken">
                                 <RouterLink
-                                :class="{ 'text-blue-500': $route.name == 'Login' }"
+                                    :class="{
+                                        'text-blue-500': $route.name == 'Login',
+                                    }"
                                     class="hover:text-blue-500"
                                     :to="{ name: 'Login' }"
                                     >Login
@@ -51,7 +54,10 @@ const logout = async () => {
                             </li>
                             <li v-if="!hasToken">
                                 <RouterLink
-                                :class="{ 'text-blue-500': $route.name == 'Register' }"
+                                    :class="{
+                                        'text-blue-500':
+                                            $route.name == 'Register',
+                                    }"
                                     class="hover:text-blue-500"
                                     :to="{ name: 'Register' }"
                                     >Register
@@ -66,7 +72,10 @@ const logout = async () => {
 
                             <li v-if="hasToken">
                                 <RouterLink
-                                :class="{ 'text-blue-500': $route.name == 'Dashboard' }"
+                                    :class="{
+                                        'text-blue-500':
+                                            $route.name == 'Dashboard',
+                                    }"
                                     class="hover:text-blue-500"
                                     :to="{ name: 'Dashboard' }"
                                     >Dashboard
