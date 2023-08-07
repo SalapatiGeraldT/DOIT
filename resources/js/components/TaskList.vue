@@ -10,11 +10,11 @@
             <li
                 class="group p-4 rounded h-46 w-60 bg-white text-black drop-shadow-md"
                 :class="{
-                    'hover:drop-shadow-xl hover:-translate-y-6 transition ease-in-out delay-75   hover:scale-110  duration-300 border-orange-700 rounded-md border-t-4 ':
+                    'hover:drop-shadow-xl  border-orange-700 rounded-md border-t-4 ':
                         task.status == 'TODO',
-                    'hover:drop-shadow-xl hover:-translate-y-6 transition ease-in-out delay-75   hover:scale-110  duration-300 border-green-700 rounded-md border-t-4 ':
+                    'hover:drop-shadow-xl  border-green-700 rounded-md border-t-4 ':
                         task.status == 'DONE',
-                    'hover:drop-shadow-xl hover:-translate-y-6 transition ease-in-out delay-75   hover:scale-110  duration-300 border-blue-700 rounded-md border-t-4 ':
+                    'hover:drop-shadow-xl  border-blue-700 rounded-md border-t-4 ':
                         task.status == 'DOING',
                 }"
                 v-for="(task, index) in tasks"
